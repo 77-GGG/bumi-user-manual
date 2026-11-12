@@ -1,0 +1,33 @@
+% !TeX program = xelatex
+\documentclass[UTF8,fontset=fandol,zihao=-4,a4paper,oneside,openany]{ctexbook}
+\input{preamble}
+\begin{document}
+\begin{titlepage}
+\centering
+\vspace*{0.18\textheight}
+{\Huge\bfseries Bumi 机器人\par}
+\vspace{0.6cm}
+{\huge\bfseries 综合使用手册\par}
+\vspace{1.6cm}
+\includegraphics[width=0.72\linewidth]{images/bumi-components.jpg}
+\end{titlepage}
+\frontmatter
+\input{frontmatter/preface}
+\clearpage\setchapterheader{目录}
+\tableofcontents
+\mainmatter
+\input{chapters/01-hardware}
+\input{chapters/02-daily-use}
+\input{chapters/03-fundamentals}
+\input{chapters/04-network}
+\input{chapters/05-build}
+\input{chapters/06-high-controller}
+\input{chapters/07-low-controller}
+\input{chapters/08-media}
+\input{chapters/09-camera}
+\input{chapters/10-troubleshooting}
+\appendix
+\input{appendices/a-commands}
+\input{appendices/b-joints}
+\input{appendices/c-resources}
+\end{document}
